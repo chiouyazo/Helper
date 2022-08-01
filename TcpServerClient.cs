@@ -1,8 +1,8 @@
 // Simple TCP Listener that Listens for data on a new Thread, so it doesnt Block Off Anything, and then returns the received data to the sender.
 // Should be Put into a Try, so it doesnt Stop the Program
 
-public static int Port = 9060;
-public static TcpListener listener = new TcpListener(System.Net.IPAddress.Any, Port);
+int Port = 9060;
+TcpListener listener = new TcpListener(System.Net.IPAddress.Any, Port);
 
 listener.Start();
 while(true)
