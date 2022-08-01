@@ -15,3 +15,5 @@ A Repo that Contains All Kinds of Things to do in C#
     -Check for DB Connection
     -Export to Excel
     -DecryptEncrypt
+    -JsonUsage
+    -GetFromToFile
