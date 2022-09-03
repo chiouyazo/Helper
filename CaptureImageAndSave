@@ -1,0 +1,18 @@
+// Using OpenCvSharp Nuget Package
+
+VideoCapture capture;
+            Mat frame;
+            Bitmap image;
+
+            frame = new Mat();
+            capture = new VideoCapture();
+            capture.Open(0);
+
+            if (capture.IsOpened())
+            {
+                capture.Read(frame);
+                image = OpenCvSharp.Extensions.BitmapConverter.ToBitmap(frame);
+                image.Save(Application.StartupPath + "B.png", System.Drawing.Imaging.ImageFormat.Png);
+                Console.Write("Done");
+                Console.ReadKey();
+            }
